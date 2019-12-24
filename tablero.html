@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/tablero.css" />
+        <script src="scripts/pirates.js" type="text/javascript"></script>
+        <script src="scripts/tablero.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="barco-naranja">
+            <img src="images/barco-naranja.png" height="150" width="150"/>
+            <p>Vida:<input type="number"></p>
+            <p>Ataque</Area>:<input type="text"></p>
+            <p>Defensa:<input type="number"></p>
+        </div>
+        <table id="game-tracking" align="center">
+            <th>EQUIPO 1</th>
+            <th>EQUIPO 2</th>
+            <tr>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+                <td>
+                    <button onclick="onAddPirateClick(this);">
+                        Añadir Pirata
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <table id="quality-election" style="display:none" align="center">
+            <tr>
+                <td onclick="onQualityChosen('common');" style="background-color:grey;">
+                    Común
+                </td>
+                <td onclick="onQualityChosen('lesscommon');" style="background-color:green;">
+                    Poco Común
+                </td>
+                <td onclick="onQualityChosen('special');" style="background-color:blue;">
+                    Especial
+                </td>
+            </tr>
+            <tr>
+                <td onclick="onQualityChosen('epic');" style="background-color:purple;">
+                    Épica
+                </td>
+                <td onclick="onQualityChosen('legendary');" style="background-color:orange;">
+                    Legendaria
+                </td>
+                <td onclick="onQualityChosen('mythical');" style="background-color:red;">
+                    Mítica
+                </td>
+            </tr>
+        </table>
+        <table id="pirate-election" style="display:none" align="center">
+        </table>
+        <div id="barco-verde">
+            <img src="images/barco-verde.png" height="150" width="150"/>
+            <p>Vida:<input type="number"></p>
+            <p>Ataque</Area>:<input type="text"></p>
+            <p>Defensa:<input type="number"></p>
+        </div>   
+    </body>
+</html>
