@@ -88,10 +88,6 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
     name.innerText = `Nombre: ${piratename}`;
     gameTrackingTd.appendChild(name);
 
-    const ability = document.createElement('p');
-    ability.innerText = `Habilidad: ${pirate.ability}`;
-    gameTrackingTd.appendChild(ability);
-
     const life = document.createElement('p');
     const lifeInput = document.createElement('input');
     lifeInput.type = 'number';
@@ -100,21 +96,60 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
     life.appendChild(lifeInput);
     gameTrackingTd.appendChild(life);
 
-    const attack = document.createElement('p');
-    const attackInput = document.createElement('input');
-    attackInput.type = 'text';
-    attackInput.value = pirate.attack;
-    attack.innerText = `Ataque:`;
-    attack.appendChild(attackInput);
-    gameTrackingTd.appendChild(attack);
+    const attackOrHeal = document.createElement('p');
+    const attackOrHealInput = document.createElement('input');
+    attackOrHealInput.type = 'text';
+    if (pirate.attack) {
+        attackOrHeal.innerText = `Ataque:`;
+        attackOrHealInput.value = pirate.attack;
+    } else {
+        attackOrHeal.innerText = `Heal:`;
+        attackOrHealInput.value = pirate.heal;
+    }
+    attackOrHeal.appendChild(attackOrHealInput);
+    gameTrackingTd.appendChild(attackOrHeal);
 
-    const attackrounds = document.createElement('p');
-    const attackroundsInput = document.createElement('input');
-    attackroundsInput.type = 'number';
-    attackroundsInput.value = pirate.attackrounds;
-    attackrounds.innerText = `Rondas por Ataque:`;
-    attackrounds.appendChild(attackroundsInput);
-    gameTrackingTd.appendChild(attackrounds);
+    const attackOrHealrounds = document.createElement('p');
+    const attackOrHealroundsInput = document.createElement('input');
+    attackOrHealroundsInput.type = 'number';
+    if (pirate.attack) {
+        attackOrHealrounds.innerText = `Rondas por Ataque:`;
+        attackOrHealroundsInput.value = pirate.attackrounds;
+    } else {
+        attackOrHealrounds.innerText = `Rondas por Curación:`;
+        attackOrHealroundsInput.value = pirate.healrounds;
+    }
+    attackOrHealrounds.appendChild(attackOrHealroundsInput);
+    gameTrackingTd.appendChild(attackOrHealrounds);
+
+    const abilityBox = document.createElement('div');
+    abilityBox.className = 'ability-box';
+
+    const ability = document.createElement('p');
+    ability.innerText = `Habilidad: ${pirate.ability}`;
+    ability.title = pirate.abilityDescription;
+    const abilityInput = document.createElement('input');
+    abilityInput.type = 'checkbox';
+    ability.appendChild(abilityInput);
+    abilityBox.appendChild(ability);
+
+    const abilityrounds = document.createElement('p');
+    const abilityroundsInput = document.createElement('input');
+    abilityroundsInput.type = 'number';
+    abilityroundsInput.value = pirate.abilityrounds;
+    abilityrounds.innerText = `Duración de la habilidad:`;
+    abilityrounds.appendChild(abilityroundsInput);
+    abilityBox.appendChild(abilityrounds);
+
+    const coolingdownrounds = document.createElement('p');
+    const coolingdownroundsInput = document.createElement('input');
+    coolingdownroundsInput.type = 'number';
+    coolingdownroundsInput.value = pirate.coolingdownrounds;
+    coolingdownrounds.innerText = `Rondas de Enfriamiento:`;
+    coolingdownrounds.appendChild(coolingdownroundsInput);
+    abilityBox.appendChild(coolingdownrounds);
+
+    gameTrackingTd.appendChild(abilityBox);
 
     const remove = document.createElement('button');
     remove.innerText = 'Borrar';

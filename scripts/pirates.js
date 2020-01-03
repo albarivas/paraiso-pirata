@@ -1,76 +1,110 @@
 const pirates = {
   common: {
     'Pata Palo': {
-      ability: 'Pata Metal',
       life: 40,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Pata Metal',
+      abilityDescription: 'Con ayuda de las nuevas tecnologías, Pata Palo ha conseguido reforzar sus extremidades de madera para que sean de metal, aumentando sus PV a 80 y sus PA a 30 durante las próximas 2 rondas.',
+      abilityrounds: 2,
+      coolingdownrounds: 2
     },
     'Capitán Ganchillo': {
-      ability: 'Gancho Trampa',
       life: 40,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Gancho Trampa',
+      abilityDescription: 'Durante las próximas 3 rondas, los adornos que Capitán Ganchillo crea tienen por dentro agujas que infligirán 15 puntos de daño a todos los objetivos enemigos.',
+      abilityrounds: 3,
+      coolingdownrounds: 2
     },
     'El Parcheado': {
-      ability: 'Parches Reparcheados',
       life: 40,
-      attack: 0, //heals 15 life to a teammate or himself
-      attackrounds: 1
+      heal: 15,
+      healrounds: 1,
+      ability: 'Parches Reparcheados',
+      abilityDescription: 'Los parches que ofrezca en el próximo turno de combate afectarán a todos los aliados y tendrán el doble de eficacia.',
+      abilityrounds: 1,
+      coolingdownrounds: 1
     },
     'Jugo de Barbadilla': {
-      ability: 'Punzada Jugosa',
       life: 50,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Punzada Jugosa',
+      abilityDescription: 'El daño del jugo será el doble durante las 2 próximas rondas.',
+      abilityrounds: 2,
+      coolingdownrounds: 3
     },
     'Timón Timado': {
-      ability: 'Timón Afilado',
       life: 50,
       attack: 20,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Timón Afilado',
+      abilityDescription: 'El daño del timón será multiplicado por 2 durante las próximas 2 rondas.',
+      abilityrounds: 2,
+      coolingdownrounds: 3
     },
     'Cañónigus': {
-      ability: 'Arreglo Cañónigo',
       life: 50,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Arreglo Cañónigo',
+      abilityDescription: 'Cañónigus recuperará todos sus PV y aumentará sus PA en 5 por cada vez que esta habilidad se active.',
+      abilityrounds: 0,
+      coolingdownrounds: 2
     },
     'Capitán Tontainus Barquinhus': {
-      ability: 'Inteligencia Artificial',
       life: 30,
       attack: 30,
-      attackrounds: 2
+      attackrounds: 2,
+      ability: 'Inteligencia Artificial',
+      abilityDescription: 'Durante las próximas 3 rondas, Tontainus Barquinhus no necesitará esperar 1 turno para volver a atacar, pasando así a 1 ataque por ronda con la misma potencia.',
+      abilityrounds: 3,
+      coolingdownrounds: 2
     },
     'Cazatesoros': {
-      ability: 'Garfio Doble',
       life: 40,
       attack: 20,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Garfio Doble',
+      abilityDescription: 'El próximo ataque de Cazatesoros afectará a dos objetivos que pueden ser elegidos por el equipo que controle el barco.',
+      abilityrounds: 1,
+      coolingdownrounds: 1
     },
     'Catalejo Polémico': {
-      ability: 'Polémica Disipada',
       life: 45,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Polémica Disipada',
+      abilityDescription: 'Sus 2 próximos ataques tendrán el doble de potencia.',
+      abilityrounds: 2,
+      coolingdownrounds: 2
     },
     'El Náufrago': {
-      ability: 'Naufragio Invertido',
       life: 40,
       attack: 30,
-      attackrounds: 2
+      attackrounds: 2,
+      ability: 'Naufragio Invertido',
+      abilityDescription: 'Si El Náufrago golpea al barco en el próximo ataque, el daño será el doble respecto al de su ataque original.',
+      abilityrounds: 1,
+      coolingdownrounds: 1
     },
     'Capitán Plastificado': {
-      ability: 'Plastificación Ciega',
-	  life: 60,
+      life: 60,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Plastificación Cegadora',
+      abilityDescription: 'Capitán Plastificado anulará el ataque de un objetivo enemigo en el próximo turno de combate. Únicamente no puede bloquear al barco.',
+      coolingdownrounds: 2
     },
     'Capitán Extremioxidado': {
-      ability: 'Regresión Desoxidada',
       life: 40,
       attack: 15,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Regresión Desoxidada',
+      abilityDescription: 'Capitán Extremioxidado ha viajado en el pasado y ha regenerado sus extremidades, haciendo que la potencia de su ataque y su vida se dupliquen temporalmente durante las próximas 2 rondas.',
+      coolingdownrounds: 2
     },
     'Capitán Loro': {
       ability: 'Loro Reforzado',
