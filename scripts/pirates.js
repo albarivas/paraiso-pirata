@@ -104,25 +104,35 @@ const pirates = {
       attackrounds: 1,
       ability: 'Regresión Desoxidada',
       abilityDescription: 'Capitán Extremioxidado ha viajado en el pasado y ha regenerado sus extremidades, haciendo que la potencia de su ataque y su vida se dupliquen temporalmente durante las próximas 2 rondas.',
+      abilityrounds: 2,
       coolingdownrounds: 2
     },
     'Capitán Loro': {
-      ability: 'Loro Reforzado',
       life: 50,
       attack: 20,
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Loro Reforzado',
+      abilityDescription: 'Cuando el loro ataque a cualquier objetivo, sus picotazos tendrán un 50% más de eficacia.',
+      abilityrounds: 1,
+      coolingdownrounds: 1
     },
     'Capitán Ignoro': {
-      ability: 'Consejo Anticipado',
       life: 70,
-      attack: 0, //gives advice to your team
-      attackrounds: 1
+      attack: 0,
+      attackrounds: 1,
+      ability: 'Consejo Anticipado',
+      abilityDescription: 'Capitán Ignoro se ha especializado en los turnos de preparación, así que los consejos que lanza harán efecto tanto en la ronda de preparación como en la de combate durante las próximas 2 rondas.',
+      abilityrounds: 2,
+      coolingdownrounds: 1
     },
     'Pila de Matal': {
-      ability: 'Matal Matadol',
       life: 60,
       attack: '10 x 2',
-      attackrounds: 1
+      attackrounds: 1,
+      ability: 'Matal Matadol',
+      abilityDescription: 'Chiste muy malo, pero cierto. El daño del próximo ataque de Pila de Matal tendrá doble valor, haciendo que cada objetivo sufra 20 PA.',
+      abilityrounds: 1,
+      coolingdownrounds: 1
     }
   },
   lesscommon: {
@@ -179,7 +189,7 @@ const pirates = {
     'El Cañonazos': {
       ability: 'Perdigón de la Muerte',
       life: 100,
-      attack: '30 x 2', //deals 30 damage to 2 enemies
+      attack: '30 x 2',
       attackrounds: 1
     },
     'Barbarroja': {
