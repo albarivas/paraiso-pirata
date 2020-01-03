@@ -90,6 +90,7 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
 
     const ability = document.createElement('p');
     ability.innerText = `Habilidad: ${pirate.ability}`;
+    ability.title = pirate.abilityDescription;
     gameTrackingTd.appendChild(ability);
 
     const life = document.createElement('p');
@@ -116,12 +117,16 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
     attackrounds.appendChild(attackroundsInput);
     gameTrackingTd.appendChild(attackrounds);
 
-    const remove = document.createElement('button');
-    remove.innerText = 'Borrar';
-    remove.addEventListener('click', (event) => {
+    const removeDiv = document.createElement('div');
+    removeDiv.className = 'pirateButton';
+
+    const removeText = document.createElement('a');
+    removeText.innerText = 'Borrar';
+    removeDiv.appendChild(removeText);
+    removeDiv.addEventListener('click', (event) => {
         onRemovePirate(event);
     });
-    gameTrackingTd.appendChild(remove);
+    gameTrackingTd.appendChild(removeDiv);
 
     // Set correct background color
     gameTrackingTd.style.backgroundColor = colors[quality];
@@ -129,18 +134,23 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
 
 function onRemovePirate(event) {
     // Remove all elements from parent td
-    const clickedTd = event.target.parentElement
+    const clickedTd = event.currentTarget.parentElement;
     while (clickedTd.firstChild) {
         clickedTd.removeChild(clickedTd.firstChild);
     }
 
     // Add "add pirate" button and reset color
-    const addPirate = document.createElement('button');
-    addPirate.innerText = 'Añadir Pirata';
-    addPirate.addEventListener('click', (event) => {
-        onAddPirateClick(event.target);
+    const addPirateDiv = document.createElement('div');
+    addPirateDiv.className = 'pirateButton';
+
+    const addPirateText = document.createElement('a');
+    addPirateText.innerText = 'Añadir Pirata';
+
+    addPirateDiv.appendChild(addPirateText);
+    addPirateDiv.addEventListener('click', (event) => {
+        onAddPirateClick(event.currentTarget);
     });
-    clickedTd.appendChild(addPirate);
+    clickedTd.appendChild(addPirateDiv);
     clickedTd.style.backgroundColor = 'tan';
 
     // Stop event propagation

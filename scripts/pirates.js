@@ -2,6 +2,7 @@ const pirates = {
   common: {
     'Pata Palo': {
       ability: 'Pata Metal',
+      abilityDescription: 'test',
       life: 40,
       attack: 15,
       attackrounds: 1
