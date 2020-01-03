@@ -9,6 +9,18 @@ table {
     margin: 0px 210px;
 }
 
+.title1 {
+    font-size:60px;
+    text-align: center;
+}
+
+.title1 input {
+    height: 50px;
+    width: 80px;
+    font-size: 60px;
+    text-align: center;
+}
+
 th {
     font-size:40px;
 }
@@ -49,12 +61,17 @@ td {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-left: 40px;
-} 
+}
 
-input {
-    width: 100%;
-    padding: 4px;
-    box-sizing: border-box;
+input[type=checkbox]
+{
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+    margin-left: 15px;
 }
 
 button {
@@ -132,4 +149,15 @@ button {
 
 .shipDetail {
     width: 180px;
+}
+
+.shipDetail input {
+    width: 150px;
+}
+.ability-box {
+    -webkit-box-shadow: -3px 1px 35px 18px rgba(0,0,0,0.64);
+    -moz-box-shadow: -3px 1px 35px 18px rgba(0,0,0,0.64);
+    box-shadow: -3px 1px 35px 18px rgba(0,0,0,0.64);
+    padding: 10px;
+    margin: 20px;
 }
