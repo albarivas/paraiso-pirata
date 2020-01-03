@@ -2,14 +2,14 @@ const pirates = {
   common: {
     'Pata Palo': {
       ability: 'Pata Metal',
-      life: 30,
+      life: 40,
       attack: 15,
       attackrounds: 1
     },
     'Capitán Ganchillo': {
       ability: 'Gancho Trampa',
-      life: 50,
-      attack: 20,
+      life: 40,
+      attack: 15,
       attackrounds: 1
     },
     'El Parcheado': {
@@ -32,7 +32,7 @@ const pirates = {
     },
     'Cañónigus': {
       ability: 'Arreglo Cañónigo',
-      life: 40,
+      life: 50,
       attack: 15,
       attackrounds: 1
     },
@@ -62,7 +62,8 @@ const pirates = {
     },
     'Capitán Plastificado': {
       ability: 'Plastificación Ciega',
-      attack: 10,
+	  life: 60,
+      attack: 15,
       attackrounds: 1
     },
     'Capitán Extremioxidado': {
@@ -99,7 +100,7 @@ const pirates = {
     },
     'Capitán Pata de Hierro': {
       ability: 'Fuerza Herrática',
-      life: 60,
+      life: 80,
       attack: 25,
       attackrounds: 1
     },
