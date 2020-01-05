@@ -103,7 +103,7 @@ function addSelectedPirateToGameTrackingCell(quality, piratename) {
         attackOrHeal.innerText = `Ataque:`;
         attackOrHealInput.value = pirate.attack;
     } else {
-        attackOrHeal.innerText = `Heal:`;
+        attackOrHeal.innerText = `Curación:`;
         attackOrHealInput.value = pirate.heal;
     }
     attackOrHeal.appendChild(attackOrHealInput);
