@@ -1,94 +1,94 @@
 const pirates = {
   common: {
     'Pata Palo': {
-      life: 40,
-      attack: 15,
+      life: 80,
+      attack: 30,
       attackrounds: 1,
       ability: 'Pata Metal',
-      abilityDescription: 'Con ayuda de las nuevas tecnologías, Pata Palo ha conseguido reforzar sus extremidades de madera para que sean de metal, aumentando sus PV a 80 y sus PA a 30 durante las próximas 2 rondas.',
+      abilityDescription: 'Con ayuda de las nuevas tecnologías, Pata Palo aumentará sus PV y sus PA en un 50% durante las próximas 2 rondas.',
       abilityrounds: 2,
       coolingdownrounds: 2
     },
     'Capitán Ganchillo': {
-      life: 40,
-      attack: 15,
+      life: 80,
+      attack: 30,
       attackrounds: 1,
       ability: 'Gancho Trampa',
-      abilityDescription: 'Durante las próximas 3 rondas, los adornos que Capitán Ganchillo crea tienen por dentro agujas que infligirán 15 puntos de daño a todos los objetivos enemigos.',
+      abilityDescription: 'Durante las 3 próximas rondas, los adornos que Capitán Ganchillo crea tendrán agujas por dentro que infligirán 30 PA a todos los objetivos enemigos.',
       abilityrounds: 3,
       coolingdownrounds: 2
     },
     'El Parcheado': {
-      life: 40,
-      heal: 15,
+      life: 90,
+      heal: 30,
       healrounds: 1,
       ability: 'Parches Reparcheados',
-      abilityDescription: 'Los parches que ofrezca en el próximo turno de combate afectarán a todos los aliados y tendrán el doble de eficacia.',
+      abilityDescription: 'Los parches que ofrezca en el próximo turno de combate tendrán el doble de eficacia.',
       abilityrounds: 1,
-      coolingdownrounds: 1
+      coolingdownrounds: 2
     },
     'Jugo de Barbadilla': {
-      life: 50,
-      attack: 15,
+      life: 90,
+      attack: 30,
       attackrounds: 1,
       ability: 'Punzada Jugosa',
-      abilityDescription: 'El daño del jugo será el doble durante las 2 próximas rondas.',
-      abilityrounds: 2,
-      coolingdownrounds: 3
+      abilityDescription: 'Los PA de Jugo de Barbadilla se triplicarán en el próximo turno de combate.',
+      abilityrounds: 1,
+      coolingdownrounds: 2
     },
     'Timón Timado': {
-      life: 50,
-      attack: 20,
+      life: 80,
+      attack: 40,
       attackrounds: 1,
       ability: 'Timón Afilado',
-      abilityDescription: 'El daño del timón será multiplicado por 2 durante las próximas 2 rondas.',
+      abilityDescription: 'El daño del timón será multiplicado por 1,5 durante las próximas 2 rondas.',
       abilityrounds: 2,
       coolingdownrounds: 3
     },
     'Cañónigus': {
-      life: 50,
-      attack: 15,
+      life: 90,
+      attack: 30,
       attackrounds: 1,
-      ability: 'Arreglo Cañónigo',
-      abilityDescription: 'Cañónigus recuperará todos sus PV y aumentará sus PA en 5 por cada vez que esta habilidad se active.',
-      abilityrounds: 0,
+      ability: 'Arreglo Canónigo',
+      abilityDescription: 'Cañónigus recuperará todos sus PV y aumentará sus PA en 10 por cada vez que esta habilidad se active.',
+      abilityrounds: 1,
       coolingdownrounds: 2
     },
     'Capitán Tontainus Barquinhus': {
-      life: 30,
-      attack: 30,
+      life: 90,
+      attack: 60,
       attackrounds: 2,
       ability: 'Inteligencia Artificial',
-      abilityDescription: 'Durante las próximas 3 rondas, Tontainus Barquinhus no necesitará esperar 1 turno para volver a atacar, pasando así a 1 ataque por ronda con la misma potencia.',
-      abilityrounds: 3,
-      coolingdownrounds: 2
+      abilityDescription: 'En las próximas 2 rondas, las rondas por ataque de Tontainus Barquinhus pasarán de 2 a 1.',
+      abilityrounds: 2,
+      coolingdownrounds: 3
     },
     'Cazatesoros': {
-      life: 40,
-      attack: 20,
+      life: 80,
+      attack: 40,
       attackrounds: 1,
       ability: 'Garfio Doble',
       abilityDescription: 'El próximo ataque de Cazatesoros afectará a dos objetivos que pueden ser elegidos por el equipo que controle el barco.',
       abilityrounds: 1,
-      coolingdownrounds: 1
+      coolingdownrounds: 2
     },
     'Catalejo Polémico': {
-      life: 45,
-      attack: 15,
+      life: 90,
+      attack: 30,
       attackrounds: 1,
       ability: 'Polémica Disipada',
-      abilityDescription: 'Sus 2 próximos ataques tendrán el doble de potencia.',
+      abilityDescription: 'Sus 2 próximos disparos serán tan certeros que tendrán el doble de PA. ¡Tened cuidado!',
       abilityrounds: 2,
       coolingdownrounds: 2
     },
     'El Náufrago': {
-      life: 40,
-      attack: 30,
+      life: 80,
+      attack: 60,
       attackrounds: 2,
       ability: 'Naufragio Invertido',
-      abilityDescription: 'Si El Náufrago golpea al barco en el próximo ataque, el daño será el doble respecto al de su ataque original.',
+      abilityDescription: 'Si El Náufrago ataca al barco en su próximo turno, el golpe tendrá un 50% más de PA.',
       abilityrounds: 1,
-      coolingdownrounds: 1
+      coolingdownrounds: 2
     },
     'Capitán Plastificado': {
       life: 60,
