@@ -91,33 +91,34 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Capitán Plastificado': {
-      life: 60,
-      attack: 15,
+      life: 100,
+      attack: 30,
       attackrounds: 1,
       ability: 'Plastificación Cegadora',
       abilityDescription: 'Capitán Plastificado anulará el ataque de un objetivo enemigo en el próximo turno de combate. Únicamente no puede bloquear al barco.',
+      abilityrounds: 1,
       coolingdownrounds: 2
     },
     'Capitán Extremioxidado': {
-      life: 40,
-      attack: 15,
+      life: 90,
+      attack: 30,
       attackrounds: 1,
       ability: 'Regresión Desoxidada',
-      abilityDescription: 'Capitán Extremioxidado ha viajado en el pasado y ha regenerado sus extremidades, haciendo que la potencia de su ataque y su vida se dupliquen temporalmente durante las próximas 2 rondas.',
-      abilityrounds: 2,
+      abilityDescription: 'Capitán Extremioxidado ha viajado en el pasado y ha regenerado sus extremidades, haciendo que sus PV y PA se dupliquen durante la próxima ronda.',
+      abilityrounds: 1,
       coolingdownrounds: 2
     },
     'Capitán Loro': {
-      life: 50,
-      attack: 20,
+      life: 80,
+      attack: 30,
       attackrounds: 1,
       ability: 'Loro Reforzado',
-      abilityDescription: 'Cuando el loro ataque a cualquier objetivo, sus picotazos tendrán un 50% más de eficacia.',
+      abilityDescription: 'Cuando el loro ataque a cualquier objetivo, sus picotazos tendrán un 50% más de eficacia, es decir que tendrá 45 PA en vez de 30 PA en el próximo turno de ataque.',
       abilityrounds: 1,
       coolingdownrounds: 1
     },
     'Capitán Ignoro': {
-      life: 70,
+      life: 100,
       attack: 0,
       attackrounds: 1,
       ability: 'Consejo Anticipado',
@@ -126,11 +127,11 @@ const pirates = {
       coolingdownrounds: 1
     },
     'Pila de Matal': {
-      life: 60,
-      attack: '10 x 2',
+      life: 90,
+      attack: '20 x 2',
       attackrounds: 1,
       ability: 'Matal Matadol',
-      abilityDescription: 'Chiste muy malo, pero cierto. El daño del próximo ataque de Pila de Matal tendrá doble valor, haciendo que cada objetivo sufra 20 PA.',
+      abilityDescription: 'Chiste muy malo, pero cierto. El daño del próximo ataque de Pila de Matal tendrá doble valor, haciendo que cada objetivo sufra 40 PA.',
       abilityrounds: 1,
       coolingdownrounds: 1
     }
