@@ -1,0 +1,12 @@
+body {
+    background: url(../images/pirateBKG.jpg) burlywood;
+    
+    color: white;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+}
+
+.title1 {
+    font-size:60px;
+    text-align: center;
+    color: brown;
+}
