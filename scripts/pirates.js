@@ -138,8 +138,8 @@ const pirates = {
   },
   lesscommon: {
     'Pirata Garrapata': {
-      life: 75,
-      attack: 25,
+      life: 100,
+      attack: 35,
       attackrounds: 1,
       ability: 'Garrapata Plagada',
       abilityDescription: 'Las garrapatas afectarán a todos los objetivos en el próximo ataque.',
@@ -147,7 +147,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Capitán Pata de Hierro': {
-      life: 80,
+      life: 100,
       attack: 25,
       attackrounds: 1,
       ability: 'Fuerza Herrática',
@@ -156,8 +156,8 @@ const pirates = {
       coolingdownrounds: 3
     },
     'Punto de Mira': {
-      life: 70,
-      attack: 20,
+      life: 90,
+      attack: 30,
       attackrounds: 1,
       ability: 'Mira Letal',
       abilityDescription: 'En los próximos 3 turnos, Punto de Mira duplicará su potencia de ataque, haciendo que sea una contra letal para los piratas.',
@@ -165,8 +165,8 @@ const pirates = {
       coolingdownrounds: 3
     },
     'Capitán Gorrexplosivo': {
-      life: 60,
-      attack: 20,
+      life: 80,
+      attack: 35,
       attackrounds: 1,
       ability: 'Gorroexplosión Mejorada',
       abilityDescription: 'Ahora sí, el próximo ataque alcanzará a todos los objetivos enemigos.',
@@ -174,8 +174,8 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Bumeránicus': {
-      life: 65,
-      attack: 20,
+      life: 95,
+      attack: 30,
       attackrounds: 1,
       ability: 'Bumerán Masivo',
       abilityDescription: 'En el próximo turno de combate, este bumerán afectará a todos los piratas con un único golpe que tendrá el doble de valor. ¡Cuidado con este ataque!',
@@ -183,7 +183,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Ratapi Léxicodis': {
-      life: 60,
+      life: 70,
       heal: 50,
       healrounds: 2,
       ability: 'Construcción Acelerada',
@@ -192,7 +192,7 @@ const pirates = {
       coolingdownrounds: 3
     },
     'Capitán Minado': {
-      life: 70,
+      life: 60,
       attack: 50,
       attackrounds: 2,
       ability: 'Mina Globocida',
@@ -201,18 +201,18 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Capitán Coraza Perforada': {
-      life: 80,
+      life: 90,
       attack: 25,
       attackrounds: 1,
       ability: 'Coraza Restaurada',
-      abilityDescription: 'Coraza Perforada recuperará 20 PV si al recibir un ataque sus PV se quedan por debajo de 10.',
+      abilityDescription: 'Coraza Perforada recuperará 50 PV si al recibir un ataque sus PV se quedan por debajo de 10.',
       abilityrounds: 1,
-      coolingdownrounds: 2
+      coolingdownrounds: 4
     }
   },
   special: {
     'El Cañonazos': {
-      life: 100,
+      life: 120,
       attack: '30 x 2',
       attackrounds: 1,
       ability: 'Perdigón de la Muerte',
@@ -221,8 +221,8 @@ const pirates = {
       coolingdownrounds: 1
     },
     'Barbarroja': {
-      life: 80,
-      attack: 25,
+      life: 110,
+      attack: 35,
       attackrounds: 1,
       ability: 'Latigazo Mortífero',
       abilityDescription: 'Duplicará la potencia de los próximos dos ataques, afectando a un único objetivo, siendo bastante probable que hasta un pirata poco común muera.',
@@ -239,8 +239,8 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Submarata': {
-      life: 90,
-      attack: 25,
+      life: 100,
+      attack: 45,
       attackrounds: 1,
       ability: 'Locura Embestial',
       abilityDescription: 'El submarino aumenta su velocidad y embiste a 2 objetivos en el próximo turno de combate.',
@@ -249,7 +249,7 @@ const pirates = {
     },
     'Curánticus Medianus': {
       life: 100,
-      heal: 30,
+      heal: 40,
       healrounds: 1,
       ability: 'Curánticus Gigánticus',
       abilityDescription: 'Duplica la curación que ofrece en el próximo turno debido a que su caldero aumenta la velocidad de producción y permite a los piratas tomar el doble de pócimas.',
@@ -277,7 +277,7 @@ const pirates = {
   },
   epic: {
     'Capitán Barbanegra': {
-      life: 175,
+      life: 130,
       attack: 40,
       attackrounds: 1,
       ability: 'Cañón Doble',
@@ -286,8 +286,8 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Capitán Calavera': {
-      life: 150,
-      attack: 30,
+      life: 110,
+      attack: 45,
       attackrounds: 1,
       ability: 'Muerte Súbita',
       abilityDescription: 'Fijará sus ataques en un único objetivo durante 3 rondas duplicando su potencia de ataque.',
@@ -295,7 +295,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Tacañares': {
-      life: 170,
+      life: 120,
       attack: 50,
       attackrounds: 2,
       ability: 'Tenaza Retorcida',
@@ -304,7 +304,7 @@ const pirates = {
       coolingdownrounds: 3
     },
     'Estrellatus': {
-      life: 180,
+      life: 150,
       attack: 40,
       attackrounds: 1,
       ability: 'Estrellatón',
@@ -313,7 +313,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Bucanero': {
-      life: 180,
+      life: 130,
       attack: 40,
       attackrounds: 1,
       ability: 'Traición Bucanera',
@@ -324,8 +324,8 @@ const pirates = {
   },
   legendary: {
     'Comanpitán': {
-      life: 180,
-      attack: 40,
+      life: 150,
+      attack: 50,
       attackrounds: 1,
       ability: 'Comando Comandado',
       abilityDescription: 'Toma el mando del equipo y dirige a los aliados durante los próximos 3 turnos, haciendo que aumente su ataque en un 50% en el turno de combate, y aumentándose a sí mismo en un 100%.',
@@ -333,7 +333,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Pirabot': {
-      life: 300,
+      life: 170,
       attack: '30 x 2 / 60',
       attackrounds: '1 / 2',
       ability: 'Locura Robótica',
@@ -342,18 +342,18 @@ const pirates = {
       coolingdownrounds: 3
     },
     'Myrakles': {
-      life: 300,
+      life: 150,
       attack: '?',
       attackrounds: 1,
       ability: 'Milagro Secundario',
       abilityDescription: 'Myrakles convoca una energía que solo se puede utilizar una vez cada 1000 años, y ésta hace que la vida y el ataque de tus piratas se tripliquen, además de aplicárselo a sí mismo.',
-      abilityrounds: 99,
-      coolingdownrounds: 99
+      abilityrounds: 10,
+      coolingdownrounds: 10
     }
   },
   mythical: {
     'Holandés Errante': {
-      life: 350,
+      life: 200,
       attack: '50 x 6',
       attackrounds: 2,
       ability: 'Explosión Umbría',
@@ -362,7 +362,7 @@ const pirates = {
       coolingdownrounds: 2
     },
     'Pirratatatatatata': {
-      life: 300,
+      life: 215,
       attack: '10 x 8',
       attackrounds: 1,
       ability: 'Ametralladora Controlada',
